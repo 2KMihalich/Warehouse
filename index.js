@@ -38,7 +38,7 @@ getWidthElements(645, 400);
 // paginations logic
 
 document.addEventListener("click", (e) => {
-  if (e.target.classList.contains("command-centre__btn-indicators")) {
+  if (e.target.classList.contains("command-centre__btn-indicators") && !e.target.classList.contains("command-centre__btn-indicators_active")) {
     for (let i = 0; i < btnIndicators.length; i++) {
       btnIndicators[i].classList.remove(
         "command-centre__btn-indicators_active"
