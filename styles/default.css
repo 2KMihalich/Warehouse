@@ -1,25 +1,28 @@
 /* очищаем все отступы и границы*/
 * {
-  padding: 0;
-  margin: 0;
-  border: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
+
 /*меняет подсчет ширины блока так, чтобы нам было удобнее верстать*/
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 /*убираем линии обводки у некоторых браузеров*/
 :focus,
 :active {
-  outline: none;
+    outline: none;
 }
+
 a:focus,
 a:active {
-  outline: none;
+    outline: none;
 }
 
 /*делаем некоторые элементы блочными*/
@@ -28,7 +31,7 @@ nav,
 footer,
 header,
 aside {
-  display: block;
+    display: block;
 }
 
 /* обращаемся к html & body и применим параметры, которые уравнивают поведение
@@ -36,14 +39,14 @@ aside {
 
 html,
 body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 /*обращаемся к некоторым тегам и просим их наследовать семейства шрифта, т.к. 
@@ -52,38 +55,52 @@ body {
 input,
 button,
 textarea {
-  font-family: inherit;
+    font-family: inherit;
 }
 
 /* добавляем ещё некоторые свойства*/
 
 input::-ms-clear {
-  display: none;
-} /*убирается "крестик" в explorer */
+    display: none;
+}
+
+/*убирается "крестик" в explorer */
 button {
-  cursor: pointer;
-  border: none;
-  padding: 0;
-  background-color: transparent;
-} /**/
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+/**/
 
 button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-} /*убирают лишние отступы*/
+    padding: 0;
+    border: 0;
+}
+
+/*убирают лишние отступы*/
 a,
 a:visited {
-  text-decoration: none;
-} /**/
+    text-decoration: none;
+}
+
+/**/
 a:hover {
-  text-decoration: none;
-} /**/
+    text-decoration: none;
+}
+
+/**/
 ul li {
-  list-style: none;
-} /*чистятся стиле маркированных списков*/
+    list-style: none;
+}
+
+/*чистятся стиле маркированных списков*/
 img {
-  vertical-align: top;
-} /**/
+    vertical-align: top;
+}
+
+/**/
 
 /* обнуляем заголовки*/
 
@@ -93,20 +110,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: inherit;
-  font-weight: 400;
+    font-size: inherit;
+    font-weight: 400;
 }
 
 body {
-  min-width: 320px;
-  min-height: 100vh;
-  font-family: "Ubuntu";
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: "Ubuntu";
 }
+
 .container {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-.content {
-  margin-top: 180px;
-}
+

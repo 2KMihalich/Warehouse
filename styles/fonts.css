@@ -4,12 +4,14 @@
   font-style: normal;
   font-weight: 400;
 }
+
 @font-face {
   font-family: "Ubuntu";
   src: url("../fonts/Ubuntu-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: 600;
 }
+
 @font-face {
   font-family: "Ubuntu";
   src: url("../fonts/Ubuntu-Bold.ttf") format("truetype");
