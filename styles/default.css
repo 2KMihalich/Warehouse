@@ -1,0 +1,112 @@
+/* очищаем все отступы и границы*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+/*меняет подсчет ширины блока так, чтобы нам было удобнее верстать*/
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*убираем линии обводки у некоторых браузеров*/
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+/*делаем некоторые элементы блочными*/
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+/* обращаемся к html & body и применим параметры, которые уравнивают поведение
+шрифтов и элементов для разных браузеров */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*обращаемся к некоторым тегам и просим их наследовать семейства шрифта, т.к. 
+по умолчанию эти теги не наследуют семейство шрифта*/
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/* добавляем ещё некоторые свойства*/
+
+input::-ms-clear {
+  display: none;
+} /*убирается "крестик" в explorer */
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+} /**/
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+} /*убирают лишние отступы*/
+a,
+a:visited {
+  text-decoration: none;
+} /**/
+a:hover {
+  text-decoration: none;
+} /**/
+ul li {
+  list-style: none;
+} /*чистятся стиле маркированных списков*/
+img {
+  vertical-align: top;
+} /**/
+
+/* обнуляем заголовки*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Ubuntu";
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.content {
+  margin-top: 180px;
+}
